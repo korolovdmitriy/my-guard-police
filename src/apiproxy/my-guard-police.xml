@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="7" name="my-guard-police">
+    <Basepaths>/my-guard-police</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1652201043321</CreatedAt>
+    <CreatedBy>adrorecords@gmail.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>my-guard-police</DisplayName>
+    <LastModifiedAt>1652716663795</LastModifiedAt>
+    <LastModifiedBy>sek.sazonov@gmail.com</LastModifiedBy>
+    <ManifestVersion>SHA-512:f80dfe517e72c98cfd4caa5fa6454879e5e4fb26531b11a5381af2834c3b400eb87f305798c89aea12610a706b9ef21d1d9577d270f764d79b1fc8949e4a6dcd:dc-1</ManifestVersion>
+    <Policies>
+        <Policy>AM-AddTokenHeader</Policy>
+        <Policy>AM-BadRequest</Policy>
+        <Policy>AM-DefaultError</Policy>
+        <Policy>AM-Forbidden</Policy>
+        <Policy>AM-NotFound</Policy>
+        <Policy>AM-UnauthorizedError</Policy>
+        <Policy>EV-GetId</Policy>
+        <Policy>EV-OauthToken</Policy>
+        <Policy>JS-PrintResponce</Policy>
+        <Policy>RF-TooManyRequests</Policy>
+        <Policy>SA-Block</Policy>
+        <Policy>SC-CheckCrimes</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>openapi://association.json</Resource>
+        <Resource>jsc://JS-PrintResponse.js</Resource>
+    </Resources>
+    <Spec>https://raw.githubusercontent.com/korolovdmitriy/swagger/main/Police-server-2.0.yaml</Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
